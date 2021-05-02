@@ -50,8 +50,8 @@ const Login = () => {
             value={password}
             />
           {validate && <p className='validate'>Заполните все поля!</p>}
-          <button className='btn' type='submit'>
-            {auth.loading ? <div className='loading'></div> : 'Войти'}
+          <button className='btn' type='submit' style={auth.failed ? {background: 'red'} : {}}>
+            {auth.loading ? <div className='loading'></div> : auth.failed ? 'Повторить' : 'Войти'}
           </button>
         </>
       }
