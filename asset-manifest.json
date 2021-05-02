@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Transaction-app/static/css/main.67418cbd.chunk.css",
+    "main.js": "/Transaction-app/static/js/main.46baac16.chunk.js",
+    "main.js.map": "/Transaction-app/static/js/main.46baac16.chunk.js.map",
+    "runtime-main.js": "/Transaction-app/static/js/runtime-main.51230ec0.js",
+    "runtime-main.js.map": "/Transaction-app/static/js/runtime-main.51230ec0.js.map",
+    "static/js/2.d8c36bd4.chunk.js": "/Transaction-app/static/js/2.d8c36bd4.chunk.js",
+    "static/js/2.d8c36bd4.chunk.js.map": "/Transaction-app/static/js/2.d8c36bd4.chunk.js.map",
+    "index.html": "/Transaction-app/index.html",
+    "static/css/main.67418cbd.chunk.css.map": "/Transaction-app/static/css/main.67418cbd.chunk.css.map",
+    "static/js/2.d8c36bd4.chunk.js.LICENSE.txt": "/Transaction-app/static/js/2.d8c36bd4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51230ec0.js",
+    "static/js/2.d8c36bd4.chunk.js",
+    "static/css/main.67418cbd.chunk.css",
+    "static/js/main.46baac16.chunk.js"
+  ]
+}
