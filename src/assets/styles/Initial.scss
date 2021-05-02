@@ -1,0 +1,67 @@
+@import './Variables.scss';
+@import './Templates.scss';
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      width: 0;
+    }
+    .container{
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    position: relative;
+    min-height: 100%;
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid #f3f3f3; 
+      border-top: 1px solid #888282; 
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      animation: spin .7s linear infinite;
+    }
+    .fallback__loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 3px solid #f3f3f3; 
+      border-top: 8px solid $blueBg; 
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin .7s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform:translate(-50%, -50%)  rotate(0deg) }
+      100% { transform:translate(-50%, -50%)  rotate(360deg)}
+    }
+  }
+  
+  
+  

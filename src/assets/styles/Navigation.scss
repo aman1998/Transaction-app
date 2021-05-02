@@ -1,0 +1,70 @@
+@import './Variables.scss';
+@import './Templates.scss';
+
+.profile-navigation {
+  position: relative;
+  @include fs18;
+  color: $darkTextBg;
+  &:hover > .dropdown {
+    transform: translate(0,0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  .user-icon {
+  width: 35px;
+  height: 35px;
+  transition: .5s;
+  cursor: pointer;
+  }
+  .dropdown {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    background: $blueLightBg;
+    transform: translateY(10px);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 35px;
+      transition: .5s;
+    }
+    &-item > a {
+      padding: 0 10px;
+      @include fs16;
+      width: 100%;
+      &:hover {
+        background: $yellowLightBg;
+      }
+    }
+    .btn {
+      display: inline-block;
+      text-align: left;
+      padding: 0 10px;
+      width: 100%;
+      background: $blueLightBg;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background: $yellowLightBg;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+    .active {
+      background: $yellowBg;
+      color: $darkTextBg;
+      &:hover {
+        background: $yellowBg !important;
+        color:$darkTextBg !important;
+      }
+    }
+  }
+}

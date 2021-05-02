@@ -1,0 +1,56 @@
+@import './Variables.scss';
+@import './Templates.scss';
+
+.transactions__list {
+  h1 {
+    margin: 10px 0;
+    color: $darkTextBg;
+  }
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: $blueLightBg;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    &__title {
+      min-width: 100px;
+    }
+    &__btn {
+      @include btn;
+      width: 100px;
+      background: inherit;
+      border: 1px solid $errorBg;
+      color: $errorBg;
+    }
+  }
+}
+.transaction__add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  h1 {
+    margin: 100px 0 10px 0;
+    color: $darkTextBg
+  }
+  .select {
+    @include select;
+    width: 300px;
+    cursor: pointer;
+  }
+  .btn {
+    @include btn;
+    margin-top: 10px;
+  }
+  .input {
+    @include input;
+    margin: 10px 0 0 0;
+  }
+  .validate {
+    text-align: left;
+    color: $errorBg;
+    width: 300px;
+  }
+}
